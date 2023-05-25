@@ -1,0 +1,1093 @@
+#中国共产党第八次代表大会
+shared_focus = {
+		id = PRC_The_Eighth_Congress_of_the_Communist_Party_of_China
+		icon = The_Eighth_Congress_of_the_Communist_Party_of_China
+		x = 15
+		y = 0
+		
+		cost = 1
+		
+		allow_branch ={
+		has_country_flag = src_prc_phase_first
+		}
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.101 days = 0 }
+		}
+	}
+#回顾我们的历史
+shared_focus = {
+		id = PRC_Review_our_history
+		icon = Review_our_history
+		relative_position_id = PRC_The_Eighth_Congress_of_the_Communist_Party_of_China
+		x = -2
+		y = 1
+		
+		cost= 1
+		
+		prerequisite = { focus = PRC_The_Eighth_Congress_of_the_Communist_Party_of_China }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		    country_event = { id = first_phase.5 days=0 }
+		}
+	}
+#展望我们的未来
+shared_focus = {
+		id = PRC_Looking_forward_to_our_future
+		icon = Looking_forward_to_our_future
+		relative_position_id = PRC_The_Eighth_Congress_of_the_Communist_Party_of_China 
+		x = 2
+		y = 1
+		
+		cost = 1
+		
+		prerequisite = { focus = PRC_The_Eighth_Congress_of_the_Communist_Party_of_China }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		    country_event = { id = first_phase.8 days=0 }
+		}
+	}
+#反对布哈林主义的旗手
+shared_focus = {
+		id = PRC_The_standard_bearer_against_bukharinism
+		icon = The_standard_bearer_against_bukharinism
+		relative_position_id = PRC_Review_our_history
+		x = -1
+		y = 1
+		
+		cost = 1
+		
+		prerequisite = { focus = PRC_Review_our_history }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.6 days=0 }
+		#社会主义-5％
+			add_political_power = 50
+		}
+	}
+#马克思列宁主义的顽固分子
+shared_focus = {
+		id = PRC_Marxist_Leninist_die_hards
+		icon=Marxist_Leninist_die_hards
+		relative_position_id = PRC_Review_our_history
+		x=1
+		y=1
+		
+		cost=1
+		
+		prerequisite = { focus = PRC_Review_our_history }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.2 days = 1 }
+		}
+	}
+#廓拉刹已逝
+shared_focus = {
+		id = PRC_The_pull_brake_is_dead
+		icon=The_pull_brake_is_dead
+		relative_position_id = PRC_Looking_forward_to_our_future
+		x=-1
+		y=1
+		
+		cost=1
+		
+		prerequisite = { focus = PRC_Looking_forward_to_our_future }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		    country_event = { id = first_phase.9 days=0 }
+		}
+	}
+#亚里坤重生
+shared_focus = {
+		id = PRC_Alekun_rebirth
+		icon=Alekun_rebirth
+		relative_position_id = PRC_Looking_forward_to_our_future
+		x=1
+		y=1
+		
+		cost = 1
+		
+		prerequisite = { focus = PRC_Looking_forward_to_our_future }
+		ai_will_do = {
+		factor = 1
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		    country_event = { id = first_phase.10 days=0 }
+		}
+	}
+#建党以来若干历史问题的决议
+shared_focus = {
+		id = PRC_Resolutions_on_several_historical_issues_since_the_founding_of_the_party
+		icon=Resolutions_on_several_historical_issues_since_the_founding_of_the_party
+		relative_position_id = PRC_Review_our_history
+		x=0
+		y=2
+		
+		cost = 1
+		
+		prerequisite = { focus = PRC_The_standard_bearer_against_bukharinism }
+		prerequisite = { focus = PRC_Marxist_Leninist_die_hards }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		    country_event = { id = first_phase.7 days=0 }
+		}
+	}
+#我们的任务是解放全中国
+shared_focus = {
+		id = PRC_Our_task_is_to_liberate_the_whole_of_China
+		icon=Our_task_is_to_liberate_the_whole_of_China
+		relative_position_id = PRC_Looking_forward_to_our_future
+		x=0
+		y=2
+		
+		cost = 1
+		
+		prerequisite = { focus = PRC_The_pull_brake_is_dead }
+		prerequisite = { focus = PRC_Alekun_rebirth }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		#中幅提高军事训练落实率
+		}
+	}
+#开始新的工作
+shared_focus = {
+		id = PRC_Start_a_new_job
+		icon=Start_a_new_job
+		relative_position_id =PRC_The_Eighth_Congress_of_the_Communist_Party_of_China
+		x=0
+		y=4
+		cost=1
+		
+		prerequisite = { focus = PRC_Our_task_is_to_liberate_the_whole_of_China }
+		prerequisite = { focus = PRC_Resolutions_on_several_historical_issues_since_the_founding_of_the_party }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		#改善行政效率
+		}
+	}
+#整理根据地经济
+shared_focus = {
+		id = PRC_Sorting_out_the_economy_of_base_areas
+		icon=Sorting_out_the_economy_of_base_areas
+		relative_position_id =PRC_Start_a_new_job
+		x=-4
+		y=1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Start_a_new_job }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.3 days = 1 }
+		#花费1点预算
+		}
+		}
+#党的布尔什维克化
+shared_focus = {
+		id = PRC_Bolshevikization_of_the_party
+		icon=Bolshevikization_of_the_party
+		relative_position_id =PRC_Start_a_new_job
+		x=4
+		y=1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Start_a_new_job }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.14 days=0 }
+		#共产主义+5％
+		}
+		}
+#加强技术教育
+shared_focus = {
+		id = PRC_Strengthen_technical_education
+		icon=Strengthen_technical_education
+		relative_position_id =PRC_Sorting_out_the_economy_of_base_areas
+		x=-2
+		y=1
+		cost = 2
+		
+		prerequisite = {focus = PRC_Sorting_out_the_economy_of_base_areas }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.21 days = 0 }
+		#改善教育水平
+		#花费2点预算
+		custom_effect_tooltip = Strengthen_technical_education_1
+		}
+		}
+#终结公社战时共产主义
+shared_focus = {
+		id = PRC_Summarize_work_experience
+		icon=Summarize_work_experience
+		relative_position_id =PRC_Sorting_out_the_economy_of_base_areas
+		x=2
+		y=1
+		cost=2
+		
+		prerequisite = {focus = PRC_Sorting_out_the_economy_of_base_areas }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.11 days=0 }
+		swap_ideas = {
+			remove_idea = SRC_Commune_wartime_Communist_Policy
+			add_idea = SRC_Economic_system_reform_1
+		}
+		
+		#花费3点预算
+		
+		}
+	}
+#基层大整风
+shared_focus = {
+		id = PRC_Grassroots_rectification
+		icon = Grassroots_rectification
+		relative_position_id =PRC_Bolshevikization_of_the_party
+		x=-2
+		y=1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Bolshevikization_of_the_party }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		add_ideas = SRC_Grassroots_rectification_1
+		}
+		}
+#对反动派的最后一击
+shared_focus = {
+		id = PRC_A_final_blow_to_the_reactionaries
+		icon = A_final_blow_to_the_reactionaries
+		relative_position_id =PRC_Bolshevikization_of_the_party
+		x = 2
+		y = 1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Bolshevikization_of_the_party }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		
+		#花费3点预算
+		
+		custom_effect_tooltip = A_final_blow_to_the_reactionaries
+		}
+		}
+#提高公社教育拨款
+shared_focus = {
+		id = PRC_Increase_commune_education_funding
+		icon= Increase_commune_education_funding
+		relative_position_id =PRC_Strengthen_technical_education
+		x=-1
+		y=1
+		cost=2
+		
+		prerequisite = { focus = PRC_Strengthen_technical_education }
+		mutually_exclusive = { focus = PRC_Strengthening_the_Central_Educatio_Commission }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.27 days = 1 }
+		
+		#花费1点预算
+		#急速改善教育水平
+		#改善工业专业知识
+		
+		custom_effect_tooltip = Increase_commune_education_funding
+		set_country_flag = Increase_commune_education_funding
+		}
+		}
+#加强中央教育委员会
+shared_focus = {
+		id = PRC_Strengthening_the_Central_Educatio_Commission
+		icon = Strengthening_the_Central_Educatio_Commission
+		relative_position_id =PRC_Strengthen_technical_education
+		x = 1
+		y = 1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Strengthen_technical_education }
+		mutually_exclusive = { focus = PRC_Increase_commune_education_funding }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.24 days = 1}
+		
+		#花费3点预算
+		#急速改善教育水平
+		#改善研究设施
+		
+		custom_effect_tooltip = Strengthening_the_Central_Educatio_Commission
+		set_country_flag = Strengthening_the_Central_Educatio_Commission
+		}
+		}
+#精简管理机构
+shared_focus = {
+		id = PRC_Streamline_management
+		icon = Streamline_management
+		relative_position_id =PRC_Summarize_work_experience
+		x = -1
+		y = 1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Summarize_work_experience }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.4 days = 1 }
+		if = {
+			limit = { has_idea = SRC_Economic_system_reform_1 }
+			swap_ideas = {
+				remove_idea = SRC_Economic_system_reform_1
+				add_idea = SRC_Economic_system_reform_2
+			}
+		}
+		else_if = {
+			limit = { has_idea = SRC_Economic_system_reform_2 }
+			swap_ideas = {
+				remove_idea = SRC_Economic_system_reform_2
+				add_idea = SRC_Economic_system_reform_3
+			}
+		}
+		
+		#获得1点预算
+		#改善行政效率
+		
+		}
+		}
+#加强地方自治系统
+shared_focus = {
+		id = PRC_Strengthening_the_system_of_local_self_government
+		icon = Strengthening_the_system_of_local_self_government
+		relative_position_id =PRC_Summarize_work_experience
+		x = 1
+		y = 1
+		cost = 2
+		
+		prerequisite = { focus = PRC_Summarize_work_experience }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.26 days = 0 }
+		
+		#花费1点预算
+		#改善行政效率
+		
+		if = {
+			limit = { has_idea = SRC_Economic_system_reform_1 }
+			swap_ideas = {
+				remove_idea = SRC_Economic_system_reform_1
+				add_idea = SRC_Economic_system_reform_2
+			}
+		}
+		else_if = {
+			limit = { has_idea = SRC_Economic_system_reform_2 }
+			swap_ideas = {
+				remove_idea = SRC_Economic_system_reform_2
+				add_idea = SRC_Economic_system_reform_3
+			}
+		}
+		}
+		}
+#红红脸，出出汗
+shared_focus = {
+		id = PRC_Red_face_and_sweating
+		icon=Red_face_and_sweating
+		relative_position_id =PRC_Grassroots_rectification
+		x=-1
+		y=1
+		cost=2
+		
+		prerequisite = { focus = PRC_Grassroots_rectification }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.15 days=0 }
+		add_stability = -0.01
+			if = {
+			limit = { has_idea = SRC_Grassroots_rectification_1 }
+			swap_ideas = {
+				remove_idea = SRC_Grassroots_rectification_1
+				add_idea = SRC_Grassroots_rectification_2
+			}
+		}
+		else_if = {
+			limit = { has_idea = SRC_Grassroots_rectification_2 }
+			swap_ideas = {
+				remove_idea = SRC_Grassroots_rectification_2
+				add_idea = SRC_Grassroots_rectification_3
+			}
+		} 
+		}
+		}
+#群众路线是我们工作的第一原则
+shared_focus = {
+		id = PRC_The_mass_line_is_the_first_principle_in_our_work
+		icon = The_mass_line_is_the_first_principle_in_our_work
+		relative_position_id =PRC_Grassroots_rectification
+		x=1
+		y=1
+		cost= 2
+		
+		prerequisite = { focus = PRC_Grassroots_rectification }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.16 days=0 }
+			add_stability = -0.01
+			if = {
+			limit = { has_idea = SRC_Grassroots_rectification_1 }
+			swap_ideas = {
+				remove_idea = SRC_Grassroots_rectification_1
+				add_idea = SRC_Grassroots_rectification_2
+			}
+		}
+			else_if = {
+			limit = { has_idea = SRC_Grassroots_rectification_2 }
+			swap_ideas = {
+				remove_idea = SRC_Grassroots_rectification_2
+				add_idea = SRC_Grassroots_rectification_3
+			}
+		}
+		}
+		}
+#消灭宗教鸦片
+shared_focus = {
+		id = PRC_Eliminate_religious_opium
+		icon=Eliminate_religious_opium
+		relative_position_id =PRC_A_final_blow_to_the_reactionaries
+		x=-1
+		y=1
+		cost= 2
+		
+		prerequisite = {focus = PRC_A_final_blow_to_the_reactionaries }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.17 days=0 }
+		add_political_power = -20
+		add_stability = -0.05
+		}
+		}
+#将反动派连根拔起
+shared_focus = {
+		id = PRC_Uproot_the_reactionaries
+		icon=Uproot_the_reactionaries
+		relative_position_id =PRC_A_final_blow_to_the_reactionaries
+		x=1
+		y=1
+		cost=2
+		
+		prerequisite = {focus = PRC_A_final_blow_to_the_reactionaries }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			custom_effect_tooltip = Uproot_the_reactionaries
+			add_stability = 0.05
+			army_experience = 10
+			country_event = { id = first_phase.13 days=0 }
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = -200
+    			producer = SRC
+			}
+			remove_ideas = SRC_Residual_forces_of_landlords_in_southern_Xinjiang
+				
+				effect_tooltip = {
+					recruit_character = SRC_Xie_fuzhi
+				}
+				hidden_effect = {
+					SRC_Xie_fuzhi = {
+						set_character_flag = SRC_commander_character_enable
+					}
+				}
+			}
+			
+		}
+#普遍的技术教育
+shared_focus = {
+		id = PRC_Universal_Technical_Education
+		icon=PRC_Universal_Technical_Education
+		relative_position_id =PRC_Increase_commune_education_funding
+		x=1
+		y=1
+		cost=2
+		
+		prerequisite = { focus = PRC_Increase_commune_education_funding
+						 focus = PRC_Strengthening_the_Central_Educatio_Commission }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.12 days=0 }
+		if = {
+			limit = { has_country_flag = Strengthening_the_Central_Educatio_Commission }
+			#改善研究设施
+			add_ideas = SRC_Key_education
+		}
+		else_if = { 
+			limit = { has_country_flag = Increase_commune_education_funding } 
+			#急速改善工业专业知识
+			add_ideas = SRC_Commune_Technical_Education
+		}
+		}
+		}
+#更高效的管理模式
+shared_focus = {
+		id = PRC_More_efficient_management_mode
+		icon=More_efficient_management_mode
+		relative_position_id =PRC_Streamline_management
+		x=1
+		y=1
+		cost=2
+		
+		prerequisite = { focus = PRC_Streamline_management }
+		prerequisite = { focus = PRC_Strengthening_the_system_of_local_self_government }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		#改善行政效率
+			swap_ideas = {
+				remove_idea = SRC_Economic_system_reform_3
+				add_idea = SRC_New_economic_system
+			}
+		}
+		}
+#党的新生
+shared_focus = {
+		id = PRC_The_rebirth_of_the_party
+		icon=The_rebirth_of_the_party
+		relative_position_id =PRC_Red_face_and_sweating
+		x=1
+		y=1
+		cost=2
+		
+		prerequisite = { focus = PRC_Red_face_and_sweating }
+		prerequisite = { focus = PRC_The_mass_line_is_the_first_principle_in_our_work }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		add_stability = 0.3
+		swap_ideas = {
+			remove_idea = SRC_Grassroots_rectification_3
+			add_idea = SRC_Free_political_atmosphere
+		}
+		}
+		}
+#西北的红太阳
+shared_focus = {
+		id = PRC_Northwest_red_sun
+		icon=Northwest_red_sun
+		relative_position_id =PRC_Eliminate_religious_opium
+		x=1
+		y=1
+		cost=1
+		
+		prerequisite = { focus = PRC_Eliminate_religious_opium }
+		prerequisite = { focus = PRC_Uproot_the_reactionaries }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 30
+		}
+		}
+#以饱满的精神迎接解放全国的工作
+shared_focus = {
+		id = PRC_Greet_the_work_of_liberating_the_whole_country_with_full_spirit
+		icon=Greet_the_work_of_liberating_the_whole_country_with_full_spirit
+		relative_position_id =PRC_Universal_Technical_Education
+		x=2
+		y=1
+		cost=1
+		
+		prerequisite = { focus = PRC_Universal_Technical_Education }
+		prerequisite = { focus = PRC_More_efficient_management_mode }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		add_political_power = 50
+		add_timed_idea = { idea = SRC_revolutionary_enthusiasm days = 365 }
+		}
+		}
+#新新疆
+shared_focus = {
+		id = PRC_New_Xinjiang
+		icon=New_Xinjiang
+		relative_position_id =PRC_The_rebirth_of_the_party
+		x=2
+		y=1
+		cost=1
+		
+		prerequisite = { focus = PRC_The_rebirth_of_the_party }
+		prerequisite = { focus = PRC_Northwest_red_sun }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+			country_event = { id = first_phase.19 days=0 }
+		}
+		}
+#仙木西丁再次升起
+shared_focus = {
+		id = PRC_Xianmuxidin_rises_again
+		icon=PRC_Xianmuxidin_rises_again
+		relative_position_id =PRC_New_Xinjiang
+		x = -4
+		y = 1
+		cost = 1
+		
+		prerequisite = { focus = PRC_New_Xinjiang }
+		prerequisite = { focus = PRC_Greet_the_work_of_liberating_the_whole_country_with_full_spirit }
+		ai_will_do = {
+		factor = 4 
+		}
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+		
+		}
+		completion_reward = {
+		country_event = { id = first_phase.20 days=0 }
+		clr_country_flag = src_prc_phase_first
+		set_country_flag = src_prc_phase_second
+		SRC_reload_tree = yes
+		}
+	}
